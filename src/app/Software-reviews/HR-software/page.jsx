@@ -603,22 +603,19 @@ const shareOnTwitter = () => {
 // CORRECTED META TAGS - Replace your existing Head section with this:
 return (
   <>
-    <Head>
+      <Head>
       <title>Best HR Software for 2025 | Complete Guide</title>
       
-      {/* IMPORTANT: Add the missing description meta tag */}
+      {/* Standard meta tags */}
       <meta
         name="description"
         content="Comprehensive guide to choosing the best HR software for your business needs. Compare top HR platforms, features, and pricing to find the perfect solution for your company."
       />
-      
-      {/* Essential meta tags */}
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta name="robots" content="index, follow" />
 
-      {/* Open Graph - Facebook & LinkedIn */}
+      {/* Open Graph meta tags for Facebook & LinkedIn */}
       <meta property="og:type" content="article" />
-      {/* FIXED: og:title should be the title, not description */}
       <meta property="og:title" content="Best HR Software for 2025 | Complete Guide" />
       <meta
         property="og:description"
@@ -630,13 +627,14 @@ return (
       />
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="627" />
+      <meta property="og:image:alt" content="Best HR Software Guide 2025" />
       <meta
         property="og:url"
         content="https://technology-advice.vercel.app/software-reviews/hr-software"
       />
       <meta property="og:site_name" content="Technology Advice" />
 
-      {/* Twitter Card */}
+      {/* Twitter Card meta tags */}
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content="Best HR Software for 2025 | Complete Guide" />
       <meta
@@ -647,6 +645,13 @@ return (
         name="twitter:image"
         content="https://blogs.compare-bazaar.com/images/blog3.webp"
       />
+      <meta name="twitter:image:alt" content="Best HR Software Guide 2025" />
+
+      {/* Additional meta tags that might help */}
+      <meta name="author" content="Jessica Dennis" />
+      <meta name="article:author" content="Jessica Dennis" />
+      <meta name="article:published_time" content="2025-01-31T00:00:00Z" />
+      <meta name="article:modified_time" content="2025-04-25T00:00:00Z" />
 
       <link
         rel="canonical"
