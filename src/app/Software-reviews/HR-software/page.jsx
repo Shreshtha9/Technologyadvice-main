@@ -605,7 +605,7 @@ return (
     <Head>
       <title>Best HR Software for 2025 | Complete Guide</title>
       <meta
-        name="description"
+        name="title"
         content="Comprehensive guide to choosing the best HR software for your business needs. Compare top HR platforms, features, and pricing to find the perfect solution for your company."
       />
       
@@ -615,7 +615,7 @@ return (
 
       {/* Open Graph - Facebook & LinkedIn */}
       <meta property="og:type" content="article" />
-      <meta property="og:title" content="Best HR Software for 2025 | Complete Guide" />
+      <meta property="og:title" content="Comprehensive guide to choosing the best HR software for your business needs. Compare top HR platforms, features, and pricing to find the perfect solution for your company." />
       <meta
         property="og:description"
         content="Comprehensive guide to choosing the best HR software for your business needs. Compare top HR platforms, features, and pricing to find the perfect solution for your company."
