@@ -574,32 +574,28 @@ export default function HRSoftwarePage() {
 
     return stars;
   };
+//  Fixed social sharing functions with proper description
 const shareUrl = typeof window !== "undefined" ? window.location.href : "";
-const shareTitle = "Best HR Software for 2025";
+const shareTitle = "Best HR Software for 2025 | Complete Guide";
+const shareDescription = "Comprehensive guide to choosing the best HR software for your business needs. Compare top HR platforms, features, and pricing to find the perfect solution for your company.";
 
 const shareOnFacebook = () => {
   window.open(
-    `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(
-      shareUrl
-    )}`,
+    `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareUrl)}`,
     "_blank"
   );
 };
 
 const shareOnLinkedIn = () => {
   window.open(
-    `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(
-      shareUrl
-    )}`,
+    `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(shareUrl)}&title=${encodeURIComponent(shareTitle)}&summary=${encodeURIComponent(shareDescription)}`,
     "_blank"
   );
 };
 
 const shareOnTwitter = () => {
   window.open(
-    `https://twitter.com/intent/tweet?url=${encodeURIComponent(
-      shareUrl
-    )}&text=${encodeURIComponent(shareTitle)}`,
+    `https://twitter.com/intent/tweet?url=${encodeURIComponent(shareUrl)}&text=${encodeURIComponent(shareTitle + " - " + shareDescription)}`,
     "_blank"
   );
 };
@@ -653,6 +649,8 @@ return (
         href="https://technology-advice.vercel.app/software-reviews/hr-software"
       />
     </Head>
+
+
 
       <section id="hr-software">
         <div className="min-h-screen bg-[#0E1F1C] text-white relative overflow-hidden">
@@ -845,7 +843,7 @@ return (
             {/* Main Content */}
 
             <div className="flex-1 max-w-4xl">
-              <section id="what-is-pm-software">
+              <section id="hr-software">
                 <div className="bg-white rounded-2xl sm:rounded-3xl border border-gray-200 shadow-sm hover:shadow-lg mt-4 transition-shadow duration-300 overflow-hidden p-6 sm:p-8">
                   {/* Header */}
                   <header className="mb-8">
@@ -1000,6 +998,7 @@ return (
                           </a>{" "}
                           is the best HR software for large enterprises.
                         </p>
+
                         <p className="text-gray-700">Honorable mentions:</p>
                       </div>
                       <div className="flex items-start space-x-3">
