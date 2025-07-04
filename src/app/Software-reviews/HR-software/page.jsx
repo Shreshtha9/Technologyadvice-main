@@ -574,7 +574,7 @@ export default function HRSoftwarePage() {
 
     return stars;
   };
-//  Fixed social sharing functions with proper description
+// Fixed social sharing functions with proper description
 const shareUrl = typeof window !== "undefined" ? window.location.href : "";
 const shareTitle = "Best HR Software for 2025 | Complete Guide";
 const shareDescription = "Comprehensive guide to choosing the best HR software for your business needs. Compare top HR platforms, features, and pricing to find the perfect solution for your company.";
@@ -588,7 +588,7 @@ const shareOnFacebook = () => {
 
 const shareOnLinkedIn = () => {
   window.open(
-    `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(shareUrl)}&title=${encodeURIComponent(shareTitle)}&summary=${encodeURIComponent(shareDescription)}`,
+    `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(shareUrl)}`,
     "_blank"
   );
 };
@@ -600,12 +600,15 @@ const shareOnTwitter = () => {
   );
 };
 
+// CORRECTED META TAGS - Replace your existing Head section with this:
 return (
   <>
     <Head>
       <title>Best HR Software for 2025 | Complete Guide</title>
+      
+      {/* IMPORTANT: Add the missing description meta tag */}
       <meta
-        name="title"
+        name="description"
         content="Comprehensive guide to choosing the best HR software for your business needs. Compare top HR platforms, features, and pricing to find the perfect solution for your company."
       />
       
@@ -615,7 +618,8 @@ return (
 
       {/* Open Graph - Facebook & LinkedIn */}
       <meta property="og:type" content="article" />
-      <meta property="og:title" content="Comprehensive guide to choosing the best HR software for your business needs. Compare top HR platforms, features, and pricing to find the perfect solution for your company." />
+      {/* FIXED: og:title should be the title, not description */}
+      <meta property="og:title" content="Best HR Software for 2025 | Complete Guide" />
       <meta
         property="og:description"
         content="Comprehensive guide to choosing the best HR software for your business needs. Compare top HR platforms, features, and pricing to find the perfect solution for your company."
