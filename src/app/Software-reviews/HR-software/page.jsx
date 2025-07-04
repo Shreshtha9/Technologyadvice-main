@@ -511,37 +511,6 @@ export default function HRSoftwarePage() {
       ],
     },
   ];
-
-  const shareUrl = typeof window !== "undefined" ? window.location.href : "";
-const shareTitle = "Best HR Software for 2025";
-
-const shareOnFacebook = () => {
-  window.open(
-    `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(
-      shareUrl
-    )}`,
-    "_blank"
-  );
-};
-
-const shareOnLinkedIn = () => {
-  window.open(
-    `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(
-      shareUrl
-    )}`,
-    "_blank"
-  );
-};
-
-const shareOnTwitter = () => {
-  window.open(
-    `https://twitter.com/intent/tweet?url=${encodeURIComponent(
-      shareUrl
-    )}&text=${encodeURIComponent(shareTitle)}`,
-    "_blank"
-  );
-};
-
   const hrData = [
     {
       id: 1,
@@ -606,54 +575,119 @@ const shareOnTwitter = () => {
     return stars;
   };
 
-  
+ const shareUrl = typeof window !== "undefined" ? window.location.href : "";
+const shareTitle = "Best HR Software for 2025";
+
+const shareOnFacebook = () => {
+  window.open(
+    `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(
+      shareUrl
+    )}`,
+    "_blank"
+  );
+};
+
+const shareOnLinkedIn = () => {
+  window.open(
+    `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(
+      shareUrl
+    )}`,
+    "_blank"
+  );
+};
+
+const shareOnTwitter = () => {
+  window.open(
+    `https://twitter.com/intent/tweet?url=${encodeURIComponent(
+      shareUrl
+    )}&text=${encodeURIComponent(shareTitle)}`,
+    "_blank"
+  );
+};
+
+return (
+  <>
+    <Head>
+      {/* Basic Meta Tags */}
+      <title>Best HR Software for 2025 | Complete Guide</title>
+      <meta
+        name="description"
+        content="Comprehensive guide to choosing the best HR software for your business needs. Compare top HR platforms, features, and pricing to find the perfect solution for your company."
+      />
+      
+      {/* Ensure meta tags are processed first */}
+      <meta name="robots" content="index, follow" />
+      <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+      {/* Open Graph (Facebook + LinkedIn) - Complete set */}
+      <meta property="og:title" content="Best HR Software for 2025 | Complete Guide" />
+      <meta
+        property="og:description"
+        content="Comprehensive guide to choosing the best HR software for your business needs. Compare top HR platforms, features, and pricing to find the perfect solution for your company."
+      />
+      <meta
+        property="og:image"
+        content="https://blogs.compare-bazaar.com/images/blog3.webp"
+      />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="627" />
+      <meta property="og:image:alt" content="Best HR Software for 2025 - Complete Comparison Guide" />
+      <meta
+        property="og:url"
+        content="https://technology-advice.vercel.app/software-reviews/hr-software"
+      />
+      <meta property="og:type" content="article" />
+      <meta property="og:site_name" content="Technology Advice" />
+      <meta property="og:locale" content="en_US" />
+      
+      {/* Additional Facebook-specific tags */}
+      <meta property="article:author" content="Technology Advice" />
+      <meta property="article:section" content="Software Reviews" />
+      <meta property="article:tag" content="HR Software" />
+      <meta property="article:tag" content="Business Software" />
+      <meta property="article:tag" content="Employee Management" />
+
+      {/* Twitter Card - Complete set */}
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content="Best HR Software for 2025 | Complete Guide" />
+      <meta
+        name="twitter:description"
+        content="Comprehensive guide to choosing the best HR software for your business needs. Compare top HR platforms, features, and pricing to find the perfect solution for your company."
+      />
+      <meta
+        name="twitter:image"
+        content="https://blogs.compare-bazaar.com/images/blog3.webp"
+      />
+      <meta name="twitter:image:alt" content="Best HR Software for 2025 - Complete Comparison Guide" />
+      <meta name="twitter:site" content="@TechAdvice" />
+      <meta name="twitter:creator" content="@TechAdvice" />
+
+      {/* LinkedIn specific optimizations */}
+      <meta property="og:see_also" content="https://technology-advice.vercel.app" />
+      <meta name="linkedin:owner" content="Technology Advice" />
+      
+      {/* Additional meta tags for better social sharing */}
+      <meta name="author" content="Technology Advice" />
+      <meta name="publisher" content="Technology Advice" />
+      <meta name="copyright" content="Technology Advice" />
+      <meta name="theme-color" content="#1f2937" />
+      
 
 
-  return (
-    <>
-      <Head>
-        <title>Best HR Software for 2025 | Complete Guide</title>
-        <meta
-          name="description"
-          content="Comprehensive guide to choosing the best HR software for your business needs."
-        />
-
-        {/* Open Graph (Facebook + LinkedIn) */}
-        <meta property="og:title" content="Best HR Software for 2025" />
-        <meta
-          property="og:description"
-          content="Comprehensive guide to choosing the best HR software for your business needs."
-        />
-        <meta
-          property="og:image"
-          content="https://blogs.compare-bazaar.com/images/blog3.webp"
-        />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="627" />
-        <meta
-          property="og:url"
-          content="https://technology-advice.vercel.app/software-reviews/project-management"
-        />
-        <meta property="og:type" content="article" />
-        <meta property="og:site_name" content="Technology Advice" />
-
-        {/* Twitter */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Best HRSoftware for 2025" />
-        <meta
-          name="twitter:description"
-          content="Comprehensive guide to choosing the best HR software for your business needs."
-        />
-        <meta
-          name="twitter:image"
-          content="https://blogs.compare-bazaar.com/images/blog3.webp"
-        />
-
-        <link
-          rel="canonical"
-          href="https://technology-advice.vercel.app/software-reviews/project-management"
-        />
-      </Head>
+      {/* Canonical URL - Fixed */}
+      <link
+        rel="canonical"
+        href="https://technology-advice.vercel.app/software-reviews/hr-software"
+      />
+      
+      {/* Preload critical image */}
+      <link 
+        rel="preload" 
+        href="https://blogs.compare-bazaar.com/images/blog3.webp" 
+        as="image"
+      />
+    </Head>
 
       <section id="hr-software">
         <div className="min-h-screen bg-[#0E1F1C] text-white relative overflow-hidden">
